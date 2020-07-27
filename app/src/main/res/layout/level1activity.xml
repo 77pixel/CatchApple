@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/bt1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/tlo" />
+    
+    <com.cleverpixel.catchapple.Level1View
+        android:id="@+id/appleView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/tlo" />
+
+    <RelativeLayout
+        android:id="@+id/LayGameOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/gameover"
+        android:orientation="vertical"
+        android:visibility="visible" >
+		
+		<ImageView
+	        android:id="@+id/imageGame"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" 
+			android:layout_centerHorizontal="true"
+			android:src="@drawable/newgametxt" />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+			
+			<TextView
+			    android:id="@+id/tvHscoreL1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:textColor="#FFFFFF"
+			    android:textSize="60sp" />
+			
+			<TextView
+			    android:id="@+id/tvScoreL1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/tvHscoreL1"
+			    android:layout_centerHorizontal="true"
+			    android:textColor="#FFFFFF"
+			    android:textSize="60sp" />
+				        
+        </RelativeLayout>
+        
+        <ImageButton
+            android:id="@+id/imbRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@null"
+            android:src="@drawable/brestart" />
+		
+		<ImageButton
+            android:id="@+id/imbStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@null"
+            android:src="@drawable/bstart" />
+    </RelativeLayout>
+
+</RelativeLayout>
